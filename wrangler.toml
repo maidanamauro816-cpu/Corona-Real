@@ -1,0 +1,14 @@
+name = "corona-real"
+main = "src/index.js"
+compatibility_date = "2026-10-20"
+
+[[r2_buckets]]
+binding = "MEDIA"
+bucket_name = "corona-real"
+
+# D1 database_id is injected from the REAL Cloudflare resource by the deploy workflow.
+# Do not put a placeholder ID here.
+[[d1_databases]]
+binding = "DB"
+database_name = "corona-real-db"
+database_id = "INJECTED_DURING_DEPLOY"
